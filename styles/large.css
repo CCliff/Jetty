@@ -76,6 +76,46 @@ li > a{
   background-color: #363636;
 }
 
+.logo img {
+  vertical-align: middle;
+}
+
 .right {
   float: right;
 }
+
+/*Custom Styles for Slick Carousel*/
+
+.slick-initialized .slick-slide {
+  overflow: hidden;
+  max-height: 600px;
+}
+
+.slick-slide img{
+  width: 100%;
+}
+
+.slick-dots{
+  bottom: 0;
+  text-align: right;
+}
+
+.slick-dots li button{
+  background-color: white;
+  opacity: .5;
+}
+
+.slick-dots li button:hover{
+  background-color: white;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button{
+  opacity: 1;
+}
+
+.slick-dots li button:before{
+  content: "";
+}
+
+/*Custom Styles for Slick Carousel*/

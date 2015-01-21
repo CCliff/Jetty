@@ -1,5 +1,8 @@
 $(document).ready(function(){
-  debugger;
-  $('.carousel').slick();
+
+  $('.carousel').slick({
+    dots: true,
+    arrows:false
+  });
 
 });
