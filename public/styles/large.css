@@ -3,6 +3,24 @@ body{
   color: #555;
 }
 
+input {
+  border-radius: 5px;
+  border: 1px solid #999;
+  height: 20px;
+  line-height: 20px;
+  transition: border-radius .25s;
+}
+
+button:hover{
+  background-color: #999;
+  transition: background-color .25s;
+}
+
+input:focus{
+  border-radius: 2px;
+  border: 1px solid #555;
+}
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -53,6 +71,11 @@ i:after{
   background-color: #ccc;
 }
 
+#user-nav li>a.active{
+  color: white;
+  background-color: #35393A;
+}
+
 #contact-dropdown {
 }
 
@@ -63,6 +86,7 @@ i:after{
   background-color: #373D3D;
   color: #C6C6C5;
   overflow: hidden;
+  /*This transition must match the setTimeout in scripts.js*/
   transition: height .25s;
 }
 
@@ -75,6 +99,10 @@ i:after{
   height: 100%;
   padding: 0 30px;
   border-right: 1px solid #555;
+}
+
+.cell:last-child{
+  border: none;
 }
 
 
@@ -95,6 +123,44 @@ i:after{
   margin-top: 32px;
 }
 
+.social{
+  text-align: center;
+  color: #555;
+}
+
+.social .value {
+  margin: 40px 0 -35px;
+  display: block;
+  float: none;
+}
+
+.social .icon{
+  margin: 0;
+  color: #555;
+  transition: color .25s;
+}
+
+.social .icon:hover{
+  margin: 0;
+  color: #C6C6C5;
+}
+
+.input-and-button {
+  position: relative;
+  top: 63px;
+}
+
+.input-and-button button{
+  margin-left: -7px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #999;
+  height: 24px; 
+}
+
+.map{
+  padding: 0;
+}
 
 #site-nav li{
   border-left: 1px solid #555;
