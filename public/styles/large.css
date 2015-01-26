@@ -21,6 +21,10 @@ li > a{
   transition: background-color .2s;
 }
 
+i:after{
+  font-size: 1.4em;
+}
+
 .highlight{
   color: red;
 }
@@ -49,6 +53,49 @@ li > a{
   background-color: #ccc;
 }
 
+#contact-dropdown {
+}
+
+.dropdown-wrapper{
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: #373D3D;
+  color: #C6C6C5;
+  overflow: hidden;
+  transition: height .25s;
+}
+
+.dropdown-active{
+  height: 150px;
+}
+
+.cell {
+  float: left;
+  height: 100%;
+  padding: 0 30px;
+  border-right: 1px solid #555;
+}
+
+
+.cell .icon {
+  font-size: 3.25em;
+  vertical-align: middle;
+  float: left;
+  margin: 44px 0;
+}
+
+.cell .value {
+  float: left;
+  margin-top: 50px;
+  height: 3.25em;
+}
+
+.address .value{
+  margin-top: 32px;
+}
+
+
 #site-nav li{
   border-left: 1px solid #555;
 }
@@ -58,7 +105,7 @@ li > a{
 }
 
 #site-nav{
-  background-color: #161616;
+  background-color: #151616;
   height: 66px;
   text-transform: uppercase;
 }
@@ -84,6 +131,54 @@ li > a{
   float: right;
 }
 
+.container{
+  width: 1170px;
+  margin: auto;
+}
+
+#featured-items{
+  background-color: #ececec;
+}
+
+.featured img{
+  margin: 20px; 
+}
+
+.row div{
+  float: left;
+}
+
+.column-60{
+  width: 60%;
+}
+.column-40{
+  width: 40%;
+}
+
+#shopping-cart {
+  color: white;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 999999;
+  width: 44px;
+  height: 66px;
+  background-color: #2d2d2d;
+  text-align: center;
+}
+
+#shopping-cart .shopping-cart-icon{
+  height: 44px;
+  line-height: 44px;
+}
+
+#shopping-cart .shopping-cart-number{
+  min-height: 22px;
+  line-height: 22px;
+  background-color: #3cb4aa; 
+}
+
+
 /*Custom Styles for Slick Carousel*/
 
 .slick-initialized .slick-slide {
@@ -97,6 +192,7 @@ li > a{
 
 .slick-dots{
   bottom: 0;
+  right: 20px;
   text-align: right;
 }
 
